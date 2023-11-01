@@ -24,4 +24,3 @@ def usar():
 
     print('\nRecognize Tokens: ', token)
 
-usar()

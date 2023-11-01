@@ -1,8 +1,5 @@
 from flask import *
 from interpretador import *
-from UsarAnalisador import *
-from interpretador import *
-
 
 
 app = Flask(__name__)
