@@ -2,12 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Divs Coloridas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            text-align: center;
+        }
+        .div-item {
+            width: 100%;
+            height: 30px;
+            margin: 10px 0;
+            background-color: #3498db;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+
+
+    </style>
 </head>
 <body>
-    {% for token in tokens: %}
-        <p>{{token}}</p>
-    {% endfor %}
-
+    <div class="container">
+          {% for token in tokens: %}
+            <div class="div-item">{{token}}</div>
+          {% endfor %}
+    </div>
 </body>
 </html>

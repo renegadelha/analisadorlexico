@@ -23,3 +23,5 @@ def usar():
         column += col
 
     print('\nRecognize Tokens: ', token)
+
+usar()
